@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <script>
+        let iteracion;
+        let nomina =[
+        {
+            id:'1',
+            nombres:'keiner andres',
+            apellidos:'cano narvaez',
+            cargo:'programador',
+            valorDia:100000,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'2',
+            nombres:'alfredo olimpica',
+            apellidos:'santa rosa',
+            cargo:'coserje',
+            valorDia:50000,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'3',
+            nombres:'jhampier',
+            apellidos:'santos ortiz',
+            cargo:'programador',
+            valorDia:100000,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'4',
+            nombres:'monica natalia',
+            apellidos:'lozada castañeda',
+            cargo:'conserje',
+            valorDia:500000,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'5',
+            nombres:'carlos francisco',
+            apellidos:'andrade bermeo',
+            cargo:'hornero',
+            valorDia:43333,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'6',
+            nombres:'nestor david',
+            apellidos:'lozano castañeda',
+            cargo:'programador',
+            valorDia:43333,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'7',
+            nombres:'angel',
+            apellidos:'farid',
+            cargo:'hornero',
+            valorDia:43333,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'8',
+            nombres:'jose santiago',
+            apellidos:'ballen',
+            cargo:'repartidor',
+            valorDia:43333,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'9',
+            nombres:'zully vanesa',
+            apellidos:'camacho',
+            cargo:'enfermera',
+            valorDia:43333,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        },
+        {
+            id:'10',
+            nombres:'sandra milena',
+            apellidos:'navaez rodriguez',
+            cargo:'docente',
+            valorDia:43333,diasTrabajados:30,salario:0,subtransporte:0,salud:0,pension:0,arl:0,retencion:0,total_pagar:0,
+        }];
+        let cantidad=nomina.length;
+
+        for(iteracion=0;iteracion<cantidad;iteracion++){
+            let valordia=nomina[iteracion].valorDia;
+            let diastrabajados=nomina[iteracion].diasTrabajados;
+            nomina[iteracion].salario=salario2(diastrabajados,valordia);
+            nomina[iteracion].subtransporte=subtrans2(diastrabajados,valordia);
+            nomina[iteracion].salud=salud2(diastrabajados,valordia);
+            nomina[iteracion].pension=pension2(diastrabajados,valordia);
+            nomina[iteracion].arl=arl2(diastrabajados,valordia);
+            nomina[iteracion].total_pagar=pagototal2(diastrabajados,valordia);
+            nomina[iteracion].retencion=retencion2(diastrabajados,valordia);
+        }
+        console.log(nomina);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arreglo =[1,2,3,4,5,6,7,8,9,10];
+        let cantidad =arreglo.length;
+        let interar;
+        let par=[];
+        let impar=[];
+        for(interar=0;interar<cantidad;interar++){
+            if(arreglo[interar]%2==0){
+                par.push(arreglo[interar]);
+            }else{
+                impar.push(arreglo[interar]);
+            }
+            
+        }
+        console.log("Valores del array "+ arreglo);
+        console.log("Estos valores son pares "+par);
+            console.log("Estos valores son impar "+impar);
+    </script>
+</body>
+</html>

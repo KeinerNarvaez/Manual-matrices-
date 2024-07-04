@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tienda =[];
+        let numeroRegistro;
+        let iteracion;
+        let nuevoProducto;
+        let listaBusqueda=[];
+        tienda=[
+        {producto:'Arroz',
+        tipoProducto:'granos',
+        tipoUnidad:'granos',
+        cantidad:'500',
+        precio:'2450',},
+
+        {producto:'papa',
+        tipoProducto:'fruver',
+        tipoUnidad:'granos',
+        cantidad:'500',
+        precio:'1000',},
+        
+        {producto:'mora',
+        tipoProducto:'fruver',
+        tipoUnidad:'gramos',
+        cantidad:'500',
+        precio:'1500',},
+
+        {producto:'trucha',
+        tipoProducto:'carnes',
+        tipoUnidad:'gramos',
+        cantidad:'1000',
+        precio:'9000',},
+
+        {producto:'pollo entero',
+        tipoProducto:'carnes',
+        tipoUnidad:'gramos',
+        cantidad:'500',
+        precio:'4500',}
+        ]
+
+        nuevoProducto={producto:'Res',
+        tipoProducto:'carnes',
+        tipoUnidad:'gramos',
+        cantidad:'1000',
+        precio:'7500',};
+       
+        tienda.push(nuevoProducto);
+        console.log(tienda);
+        numeroRegistro=tienda.length;
+
+        for(iteracion=0;iteracion<numeroRegistro;iteracion++){
+            if(tienda[iteracion].tipoProducto=='fruver'){
+                listaBusqueda.push(tienda[iteracion]);
+            }else{
+                console.log('')
+            }
+        }
+        console.log(listaBusqueda)
+    </script>
+</body>
+</html>
